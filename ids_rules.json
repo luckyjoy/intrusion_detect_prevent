@@ -1,0 +1,177 @@
+[
+  {
+    "rule": "Telnet Scan",
+    "port": 23,
+    "severity": "HIGH",
+    "threshold": 3
+  },
+  {
+    "rule": "ICMP Flood",
+    "protocol": "ICMP",
+    "severity": "HIGH",
+    "threshold": 15
+  },
+  {
+    "rule": "Port Scan / All Ports Open",
+    "severity": "HIGH",
+    "threshold": 40
+  },
+  {
+    "rule": "RDP Brute Force",
+    "port": 3389,
+    "severity": "CRITICAL",
+    "threshold": 3
+  },
+  {
+    "rule": "SMB Exploit",
+    "ports": [
+      139,
+      445
+    ],
+    "severity": "CRITICAL",
+    "threshold": 3
+  },
+  {
+    "rule": "DNS Hijack",
+    "port": 53,
+    "severity": "CRITICAL",
+    "threshold": 5
+  },
+  {
+    "rule": "ARP Spoof",
+    "protocol": "ARP",
+    "severity": "CRITICAL",
+    "threshold": 1
+  },
+  {
+    "rule": "SSH Brute Force",
+    "port": 22,
+    "severity": "CRITICAL",
+    "threshold": 3
+  },
+  {
+    "rule": "HTTP Flood",
+    "ports": [
+      80,
+      443
+    ],
+    "severity": "CRITICAL",
+    "threshold": 75
+  },
+  {
+    "rule": "DDoS Attack Signature",
+    "ports": [
+      80,
+      443
+    ],
+    "severity": "CRITICAL",
+    "threshold": 75
+  },
+  {
+    "rule": "XSS Attack Attempt",
+    "ports": [
+      80,
+      443,
+      22
+    ],
+    "severity": "CRITICAL",
+    "threshold": 1
+  },
+  {
+    "rule": "Unauthorized Port Access",
+    "ports": [
+      80,
+      22
+    ],
+    "severity": "HIGH",
+    "threshold": 1
+  },
+  {
+    "rule": "Port Scan Detected",
+    "ports": [
+      22,
+      23
+    ],
+    "severity": "CRITICAL",
+    "threshold": 10
+  },
+  {
+    "rule": "SQL Injection Attempt",
+    "ports": [
+      80,
+      443
+    ],
+    "severity": "CRITICAL",
+    "threshold": 1
+  },
+  {
+    "rule": "Suspicious File Upload",
+    "severity": "CRITICAL",
+    "threshold": 5
+  },
+  {
+    "rule": "Login Brute Force",
+    "ports": [
+      22,
+      3389
+    ],
+    "severity": "CRITICAL",
+    "threshold": 5
+  },
+  {
+    "rule": "Malicious Packet Detected",
+    "severity": "CRITICAL",
+    "threshold": 1
+  },
+  {
+    "rule": "Unauthorized Outbound Connection",
+    "severity": "CRITICAL",
+    "threshold": 1
+  },
+  {
+    "rule": "Ping Sweep",
+    "protocol": "ICMP",
+    "severity": "HIGH",
+    "threshold": 20,
+    "description": "Detects a network reconnaissance technique where an attacker sends ICMP echo requests to a range of IP addresses to identify live hosts."
+  },
+  {
+    "rule": "Null Scan/Stealth Scan",
+    "severity": "HIGH",
+    "threshold": 5,
+    "description": "Identifies advanced port scanning attempts that use specific TCP flag combinations to evade firewalls and logging."
+  },
+  {
+    "rule": "Unauthorized Service/Daemon",
+    "severity": "HIGH",
+    "threshold": 1,
+    "description": "Alerts on network traffic to or from ports that should not be in use on the system, indicating a rogue service."
+  },
+  {
+    "rule": "Malware C2 Communication",
+    "ports": [
+      6667,
+      8080
+    ],
+    "severity": "CRITICAL",
+    "threshold": 1,
+    "description": "Detects outbound connections to known ports used for malware command and control (C2) servers."
+  },
+  {
+    "rule": "IP Spoofing",
+    "severity": "CRITICAL",
+    "threshold": 1,
+    "description": "Identifies incoming packets with a source IP address that belongs to the local network but is not associated with the sending MAC address, a sign of a spoofed IP."
+  },
+  {
+    "rule": "SYN Flood",
+    "protocol": "TCP",
+    "severity": "CRITICAL",
+    "threshold": 100,
+    "description": "Detects a classic DoS attack where a high volume of SYN packets are sent to a single host without completing the TCP handshake, exhausting server resources."
+  },
+  {
+    "rule": "Test Rule",
+    "severity": "LOW"
+  }
+]
