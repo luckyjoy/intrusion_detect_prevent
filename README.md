@@ -69,9 +69,8 @@ This project consists of the following main files:
 
 ## ▶️ How to Run
 
-1. In the extracted project folder, rename the file `run.txt` to `run.bat`.  
-2. Double-click on `run.bat`.  
-3. When the **User Account Control (UAC)** prompt appears, select **"Yes"** to run the script with administrator privileges.  
+1. Double-click on `run.bat`.  
+2. When the **User Account Control (UAC)** prompt appears, select **"Yes"** to run the script with administrator privileges.  
    > This is necessary for network traffic monitoring.
 
 ---
